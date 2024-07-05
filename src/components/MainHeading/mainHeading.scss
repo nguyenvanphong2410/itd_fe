@@ -1,0 +1,250 @@
+@import "../../styles/globals.scss";
+
+.sliderHeading {
+  .swiper {
+    padding: 0;
+    height: 520px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+
+    @include sm {
+      height: 500px;
+    }
+  }
+
+  .swiper-slide {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+
+    &:after {
+      content: "";
+      background-image: linear-gradient(
+        0deg,
+        black,
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.4)
+      );
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      bottom: 0;
+      z-index: 1;
+      opacity: 0.3;
+    }
+  }
+
+  // swiper arrows
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 50px;
+    height: 50px;
+    background-image: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .swiper-button-prev {
+    left: 30px;
+  }
+
+  .swiper-button-next {
+    right: 30px;
+  }
+
+  .swiper-button-prev span,
+  .swiper-button-next span {
+    width: 10px;
+    height: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    position: absolute;
+    border: solid 2px white;
+    border-left: 0;
+    border-bottom: 0;
+    transition: all 0.3s ease;
+    box-sizing: initial;
+  }
+
+  .swiper-button-prev span {
+    transform: rotate(-135deg);
+    left: 50%;
+  }
+
+  .swiper-button-next span {
+    transform: rotate(45deg);
+    right: 50%;
+  }
+
+  .swiper-button-prev span:after,
+  .swiper-button-next span:after {
+    content: "";
+    position: absolute;
+    background-color: white;
+    width: 0px;
+    height: 2px;
+    transition: all 0.3s ease;
+    transform: rotate(-45deg);
+  }
+
+  .swiper-button-prev:hover span {
+    left: 30%;
+  }
+
+  .swiper-button-next:hover span {
+    right: 30%;
+  }
+
+  .swiper-button-prev:hover span:after,
+  .swiper-button-next:hover span:after {
+    width: calc(20px - 4px);
+  }
+
+  @media screen and (max-width: 799px) {
+    .swiper-button-prev {
+      left: 0px;
+    }
+
+    .swiper-button-next {
+      right: 0px;
+    }
+
+    .swiper-button-prev:hover span {
+      left: 50%;
+    }
+
+    .swiper-button-next:hover span {
+      right: 50%;
+    }
+
+    .swiper-button-prev:hover span:after,
+    .swiper-button-next:hover span:after {
+      display: none;
+    }
+  }
+
+  // swiper pagination
+
+  .swiper-pagination {
+    height: 40px;
+  }
+
+  .swiper-pagination-bullet {
+    background-color: transparent;
+    border: solid 1px white;
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+    box-sizing: initial;
+
+    &:hover {
+      background-color: white;
+    }
+  }
+
+  .swiper-pagination-bullet-active {
+    width: 20px;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+    left: 0;
+    background-color: transparent;
+    border: solid 1px white;
+  }
+
+  // text content
+
+  .slide-text {
+    text-align: center;
+    color: white;
+    opacity: 1;
+    z-index: 2;
+    font-family: "IBM Plex Sans", sans-serif;
+    width: 80%;
+    max-width: 500px;
+
+    h1 {
+      font-family: "IBM Plex Sans", sans-serif;
+      font-size: 30px;
+      letter-spacing: 0.03em;
+      margin: 20.1px 0px;
+    }
+
+    p {
+      font-size: 16px;
+      font-family: "IBM Plex Mono", monospace;
+      margin: 16px 0px;
+    }
+
+    @include sm {
+      width: 60%;
+
+      h1 {
+        font-size: 20px;
+        letter-spacing: 0.02em;
+        margin: 13.4px 0px;
+      }
+
+      p {
+        font-size: 14px;
+        margin: 14px 0px;
+      }
+    }
+
+    .btn {
+      font-family: "IBM Plex Mono", monospace;
+      background-color: transparent;
+      border: solid 1px white;
+      padding: 15px 30px;
+      min-width: 100px;
+      width: fit-content;
+      font-size: 14px;
+      letter-spacing: 2px;
+      color: white;
+      position: relative;
+      border-radius: 80px;
+      transition: all 0.3s ease-in-out;
+      cursor: pointer;
+      margin-top: 20px;
+
+      &:after {
+        content: "";
+        background-color: rgba(255, 255, 255, 0.1);
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: absolute;
+        z-index: 2;
+        left: 0;
+        top: 0;
+        border-radius: inherit;
+        transition: all 0.3s ease-in-out;
+      }
+
+      &:hover {
+        font-weight: 800;
+
+        &::after {
+          left: 4px;
+          top: 5px;
+          background-color: rgba(255, 255, 255, 0.3);
+
+          @include sm {
+            left: 0px;
+            top: 0px;
+            background-color: rgba(255, 255, 255, 0.1);
+          }
+        }
+      }
+    }
+  }
+}

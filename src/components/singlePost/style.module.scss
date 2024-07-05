@@ -1,0 +1,120 @@
+.colRight {
+    display: flex;
+    justify-content: end;
+    padding-right: 10px;
+}
+
+.infoItem {
+    margin: 10px 0;
+
+    .titleOrigin {
+        font-size: 15px;
+        color: rgb(58, 58, 58);
+        font-weight: 700;
+    }
+
+    .info {
+        color: rgb(114, 108, 108);
+        font-size: 14px;
+        font-weight: 500;
+
+        &:hover {
+            opacity: 0.6;
+            cursor: pointer;
+        }
+    }
+}
+
+.titleOriginDescription {
+    color: #1c299e;
+    font-size: 28px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    /* Để tạo khoảng cách từ phần tử trước đó */
+
+}
+
+.textDescription {
+    color: grey;
+    text-align: justify;
+}
+
+.titleOriginContent {
+    margin-top: 50px;
+    color: #1c299e;
+    font-size: 28px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    /* Để tạo khoảng cách từ phần tử trước đó */
+}
+
+.textBtnDownload {
+    color: white;
+}
+
+.iconBtnDownload {
+    color: white;
+    font-size: 18px;
+}
+
+.titleOriginComment {
+    color: #3d3f3e;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.textUpdating {
+    color: gray;
+    font-style: italic;
+    font-size: 15px;
+}
+
+.itemCommentWrap {
+    .commentWrap {
+        .name {
+            color: #103469;
+        }
+
+        .timeCommentComment {
+            margin-left: 10px;
+            font-style: italic;
+            font-weight: 400;
+            font-size: 14px;
+            border: dotted 1px rgb(212, 212, 219);
+            border-radius: 6px;
+            padding: 2px 4px;
+
+
+            .iconTimeComment {
+                color: #676d6a;
+                font-size: 14px;
+                margin-right: 4px;
+            }
+        }
+
+        .textComment {
+            margin-left: 70px;
+            color: #3d3f3e;
+            line-height: 24px;
+            font-size: 15px;
+            text-align: justify;
+        }
+    }
+}
+
+.titleDown {
+    color:blue;
+    font-size: 14px;
+}
+
+.textUpdating {
+
+  color: gray;
+  font-style: italic;
+}

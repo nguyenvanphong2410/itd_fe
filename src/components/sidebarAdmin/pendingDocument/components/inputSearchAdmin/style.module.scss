@@ -1,0 +1,41 @@
+.inputSearchWrapper{
+    display: inline-block;
+    margin-right: 20px;
+    input {
+
+        &::placeholder{
+            color: #0f2f7f;
+            opacity: 0.7;
+        }
+    }
+    svg{
+        color: #0f2f7f;
+        font-weight: 700;
+    }
+}
+// Màn hình máy tính
+@media (min-width: 1440px) {}
+
+//Màn hình tablet
+@media (max-width: 768px) {
+
+}
+
+@media (min-width: 577px) and (max-width: 1440px) {
+    .inputSearchWrapper{
+        // margin-right: 1px;
+        .ant-input-group {
+            width: 66%;
+        }
+    }
+}
+
+//Màn hình điện thoại
+@media (min-width: 375px) and(max-width: 576px) {
+    .inputSearchWrapper{
+        width: 63%;
+        margin-right: 10px !important;
+        input {
+        }
+    }
+}

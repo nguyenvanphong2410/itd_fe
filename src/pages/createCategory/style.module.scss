@@ -1,0 +1,84 @@
+.headingWrapper {
+    color: rgb(102, 102, 102);
+    display: flex;
+    justify-content: space-between;
+    // background: linear-gradient(90deg, rgb(239, 240, 241) 0%, rgb(255, 255, 255) 50%, rgb(239, 240, 241) 100%);
+    padding: 10px 0px;
+    margin-top: 116px;
+    margin-bottom: 44px;
+    border-radius: 10px;
+    box-shadow: rgba(121, 121, 121, 0.3) 0px 7px 29px 0px;
+
+    .headingIcon {
+        color: rgb(109, 114, 114);
+        font-size: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 8px;
+    }
+
+    .headingTitle {
+        display: flex;
+        margin-left: 16px;
+        &:hover {
+            opacity: 0.8;
+            cursor: pointer;
+        }
+
+        .title {
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 20px;
+            margin-top: 11px;
+        }
+    }
+
+    .headingOpption {
+        margin-top: 5px;
+
+        .addText {
+            margin-right: 40px;
+            color: #1677ff;
+            font-size: 16px;
+            font-weight: 600;
+            text-decoration: none;
+            &:hover {
+                cursor: pointer;
+                opacity: 0.7;
+            }
+        }
+
+        .headingSelectSort{
+            width: 120px;
+            height: 40px;
+            margin-right: 30px;
+            top: -2px;
+        }
+    }
+}
+
+.tableWrap{
+    box-shadow: rgba(145, 145, 145, 0.3) 0px 7px 29px 0px;
+    border-radius: 10px;
+    .td {
+
+    }
+    .action{
+        align-items: center;
+        justify-content: center;
+
+        .actionIconEdit{
+            color: blue;
+            font-size: 20px;
+        }
+        .actionIconDelete {
+            color: red;
+            font-size: 20px;
+
+        }
+    }
+    .imgThumbnai{
+        border-radius: 10px;
+    }
+   
+}

@@ -1,0 +1,14 @@
+.noDataWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;  /* Thêm thuộc tính này để giữ Empty ở giữa theo chiều dọc */
+}

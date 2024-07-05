@@ -1,0 +1,18 @@
+.noSpinWrapper {
+    width: 100%;
+    margin-top: 170px;
+    margin-bottom: 150px;
+    height: calc( 100vh - 505px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+// .centered {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     flex-direction: column;
+//     height: 100%;  /* Thêm thuộc tính này để giữ Empty ở giữa theo chiều dọc */
+// }

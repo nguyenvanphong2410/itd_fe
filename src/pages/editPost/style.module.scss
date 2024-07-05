@@ -1,0 +1,54 @@
+.titleCreateDocument {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: #213ea7;
+    margin-top: -50px; // (Tùy chọn) Để tạo khoảng cách giữa title và nội dung khác
+    padding: 10px;
+}
+.rowMarginTop{
+    margin-top: 20px;
+}
+.figureImageHistoryWrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+
+    .figureImageHistory {
+        max-width: 200px;
+        height: 160px;
+
+        img {
+            border-radius: 10px;
+            box-shadow: rgba(100, 100, 109, 0.6) 0px 7px 29px 0px;
+        }
+    }
+}
+.selectCategory {
+    margin-top: 30px;
+    padding: 5px;
+    border: solid 1px rgb(212, 212, 212);
+    border-radius: 6px;
+}
+.suggest{
+    font-size: 14px;
+    margin-right: 10px;
+    font-weight: 500;
+    border: 1px;
+}
+.Obligatory{
+    color: red;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 13px;
+}
+.ifExists{
+    color: grey;
+    font-style: italic;
+    font-weight: 400;
+}

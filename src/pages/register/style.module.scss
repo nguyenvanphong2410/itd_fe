@@ -1,0 +1,90 @@
+.registerWrap {
+  background-color: rgb(255, 255, 255);
+  padding: 30px 65px 40px 50px;
+  border-radius: 6px;
+  box-shadow: rgba(121, 121, 121, 0.7) 0px 7px 29px 0px;
+
+  .messageError {
+    color: red;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .optionLabel {
+
+    margin-left: 50px;
+    font-size: 16px;
+    margin-bottom: 20px !important;
+
+    .text {
+      margin-left: 5px;
+    }
+  }
+
+  .inputItem {
+    margin-top: 10px;
+  }
+
+  .headingTextRegister {
+    margin-bottom: 20px;
+    color: #12266e;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .headingTextOriginInput {
+    font-weight: 700;
+    color: #12266e;
+    font-size: 16px;
+    margin-bottom: 5px !important;
+  }
+
+  .noAccountText {
+    margin-top: 10px;
+    font-size: 14px;
+    color: rgb(10, 65, 117);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: dotted;
+
+    .switchText {
+      margin-left: 6px;
+      color: blue;
+
+      &:hover {
+        opacity: 0.8;
+        cursor: pointer;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .btnRegister {
+    background: #082f69;
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    // margin-left: px;
+
+    &:hover {
+      opacity: 0.8;
+      cursor: pointer;
+    }
+  }
+}

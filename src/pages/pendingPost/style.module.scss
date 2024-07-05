@@ -1,0 +1,165 @@
+.container {
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+  .cardItem {
+    box-shadow: rgba(100, 100, 109, 0.3) 0px 7px 29px 0px;
+    background: linear-gradient(90deg, rgb(253, 255, 238) 0%, rgb(255, 255, 255) 50%, rgb(253, 255, 238) 100%);
+
+
+
+    &:hover {
+      transform: scale(1.04);
+      transition: transform 0.2s ease-in-out;
+      -webkit-transform: scale(1.04);
+      -moz-transform: scale(1.04);
+      -o-transform: scale(1.04);
+      -ms-transform: scale(1.04);
+    }
+
+    &:not(:hover) {
+      transform: scale(1);
+      transition: transform 0.6s ease-in-out;
+    }
+
+  }
+
+  .itemCard {
+
+
+    .iconOriginCard {
+      color: #0f2f7f;
+    }
+
+    .textOriginCard {
+      color: #0f2f7f;
+      font-size: 14px;
+
+
+    }
+
+    .infoOriginCard {
+      color: #6d7272;
+      font-size: 14px;
+    }
+  }
+  .nameDocumentCard {
+    color: #0f2f7f;
+    font-size: 20px;
+    font-weight: 700;
+  
+    &:hover {
+      opacity: 0.8;
+      color: #0f2f7f;
+    }
+  }
+}
+
+.headingUserWrapper {
+  width: calc(100vh - -490px);
+  color: rgb(102, 102, 102);
+  background-color: #f9faec;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0px;
+  margin-bottom: 44px;
+  border-radius: 10px;
+  box-shadow: rgba(121, 121, 121, 0.3) 0px 7px 29px 0px;
+
+  .headingTitle {
+    display: flex;
+    margin-top: 5px;
+    margin-left: 22px;
+
+    &:hover {
+      opacity: 0.8;
+      cursor: pointer;
+    }
+
+    .titleNewDocument {
+      font-size: 22px;
+      font-weight: bold;
+      padding: 10px;
+      border-radius: 6px;
+      color: rgb(160, 157, 10);
+    }
+  }
+
+  .headingOpption {
+    margin-top: 5px;
+    display: flex;
+
+    .addText {
+      margin-top: -5px !important;
+      margin-right: 40px;
+      color: #1677ff;
+      font-size: 16px;
+      font-weight: 600;
+      text-decoration: none;
+
+      &:hover {
+        cursor: pointer;
+        opacity: 0.7;
+      }
+    }
+
+    .selectCategory {
+      margin: -6px 24px 0 0;
+    }
+
+    .formInput {
+      margin: -10px 24px 0 0;
+    }
+  }
+}
+
+
+
+// Màn hình máy tính
+@media (min-width: 1440px) {}
+
+//Màn hình tablet
+@media (max-width: 768px) {
+  .rowContainer {
+    margin-left: 12%;
+    margin-right: -40px;
+  }
+  .headingUserWrapper{
+    width: 100%;
+    .headingTitle{
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 577px) and (max-width: 1440px) {
+  .rowContainer {
+    margin-left: 12%;
+    margin-right: -40px;
+  }
+  .headingUserWrapper{
+    width: 100%;
+    .headingTitle{
+      display: none;
+    }
+    .headingOpption{
+      margin-left: 30%;
+    }
+  }
+}
+
+//Màn hình điện thoại
+@media (min-width: 375px) and(max-width: 576px) {
+  .rowContainer {
+    margin-left: 8%;
+  }
+  .headingUserWrapper{
+    width: 100%;
+    .headingTitle{
+      display: none;
+    }
+    .headingOpption{
+      margin-left: 20px;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.card-total {
+  .ant-card-body {
+    padding: 10px 20px !important;
+  }
+}
+
+@media only screen and (max-width: 993px) {
+  .card-total {
+    .ant-card-body {
+      padding: 10px!important;
+    }
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .card-total {
+      margin-bottom: 10px;
+  }
+}

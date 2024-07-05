@@ -1,0 +1,26 @@
+.wrapTagRole {
+    position: absolute;
+    bottom: 0px;
+    z-index: 1;
+    margin-left: 10px;
+}
+
+.centerContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .textLabel {
+        color: rgb(14, 65, 141);
+        font-size: 16px;
+        font-weight: 600;
+
+    }
+}
+
+.Obligatory{
+    color: red;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 13px;
+}

@@ -1,0 +1,72 @@
+.contentWrapAdmin{
+    background: white;
+    box-shadow: rgba(121, 121, 121, 0.3) 0px 7px 29px 0px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: -webkit-inline-flex;
+}
+
+.siderWrap {
+    .logo {
+        width: 77%;
+        margin-left: 20px;
+        margin-top: 10px;
+        padding-right: 12px;
+        margin-bottom: 20px;
+    }
+}
+
+.headerAdminWrap {
+    .avatar {
+        display: flex;
+        // justify-content: space-between; // Đưa các phần tử về hai đầu của .headerAdminWrap
+        align-items: center; // Căn giữa theo chiều dọc
+        padding-right: 16px; // Khoảng trống bên phải
+    }
+    .iconFullScreen{
+        margin-right: 20px;
+        color: #2c51d4;
+        font-size: 20px;
+    }
+
+}
+
+.popoverMainNavWrap {
+    display: flex;
+    flex-direction: column;
+    padding-top: 8px;
+    height: 60px;
+    margin-top: -10px;
+    margin-left: 20px;
+
+    .textMyInfo {
+        border-bottom: 1px solid #c6c7c7;
+        padding-bottom: 10px !important;
+
+        .iconInfo {
+            margin-right: 10px;
+        }
+    }
+
+    .textLogout {
+        padding-top: 15px !important;
+
+        .iconLogout {
+            margin-right: 10px;
+        }
+    }
+
+    .textMyInfo,
+    .textLogout {
+        color: rgb(1, 63, 143);
+        padding: 8px 0;
+        font-size: 15px;
+        cursor: pointer;
+        transition: color 0.3s;
+    }
+
+    .textMyInfo:hover,
+    .textLogout:hover {
+        color: #707272;
+    }
+}

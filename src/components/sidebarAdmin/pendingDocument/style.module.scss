@@ -1,0 +1,396 @@
+/* Trong file CSS hoặc SCSS của bạn */
+
+@keyframes flash {
+
+  0%,
+  50%,
+  100% {
+    color: initial;
+    /* Màu sắc mặc định */
+  }
+
+  25%,
+  75% {
+    color: rgb(0, 60, 255);
+    /* Màu sắc nhấp nháy */
+  }
+}
+
+.titleHome {
+  text-align: center;
+  animation: flash 2s infinite;
+  /* 2s là thời gian của mỗi chu kỳ nhấp nháy, infinite để lặp vô hạn */
+}
+
+.imgCardWait {
+  border-radius: 10px;
+  // background: #000;
+  opacity: 0.2;
+}
+
+.cardWrapWait {
+  opacity: 0.6;
+  // display: none;
+}
+
+
+.headingWrapper {
+  color: rgb(102, 102, 102);
+  display: flex;
+  justify-content: end;
+  padding: 20px 0px 16px 0px;
+  margin-bottom: 44px;
+  border-radius: 10px;
+  box-shadow: rgba(121, 121, 121, 0.3) 0px 7px 29px 0px;
+  position: relative;
+
+  .headingTitle {
+    position: absolute;
+    left: 10px;
+    display: flex;
+    margin-top: -6px;
+    margin-left: 16px;
+    display: block !important;
+
+    &:hover {
+      opacity: 0.8;
+      cursor: pointer;
+    }
+
+    .headingIcon {
+      color: #6d7272;
+      font-size: 20px;
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-top: 12px;
+    }
+
+    .title {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 20px;
+      margin-top: 11px;
+
+      .titleLink {
+        color: #6d7272;
+      }
+    }
+  }
+
+  .addText {
+    margin-right: 50px;
+    line-height: 38px;
+    color: #1677ff;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+
+    &:hover {
+      cursor: pointer;
+      opacity: 0.7;
+    }
+  }
+
+  .headingOpption {
+    margin-top: 5px;
+    display: flex;
+
+    .selectCategory {
+      margin: -6px 24px 0 0;
+    }
+
+    .formInput {
+      margin: -10px 24px 0 0;
+    }
+  }
+}
+
+.tableDocumentWrap {
+  padding: 0 !important;
+  margin-top: -20px;
+  box-shadow: rgba(100, 100, 109, 0.3) 0px 7px 29px 0px;
+  border-radius: 10px !important;
+
+  .actionWrap {
+    justify-content: center;
+    text-align: center;
+    margin: 14px auto;
+    display: flex;
+
+    .actionIconHandleCheck {
+      color: #8904B1;
+      margin-right: 15px;
+      font-size: 20px;
+
+    }
+
+    .actionIconEdit {
+      color: blue;
+      font-size: 20px;
+      margin-right: 8px;
+    }
+
+    .actionIconDelete {
+      color: red;
+      font-size: 20px;
+      margin-left: 8px;
+
+    }
+
+  }
+
+  .textUpdating {
+    font-size: 12px;
+    color: gray;
+    font-style: italic;
+  }
+
+  .tagHandle {
+    &:hover {
+      cursor: pointer;
+      opacity: 0.6;
+    }
+  }
+
+}
+
+.container {
+  margin-bottom: 50px;
+
+  // Thêm các styles mới
+  .newDocumentWrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 70px;
+
+    .titleHotDocument {
+      font-size: 36px;
+      font-weight: bold;
+      color: #873fa8;
+      margin-bottom: 10px;
+    }
+
+  }
+
+  .titleNewDocument {
+    font-size: 36px;
+    font-weight: bold;
+    color: #c24e4e;
+    margin-bottom: 10px;
+  }
+
+  .cardItem {
+    box-shadow: rgba(100, 100, 109, 0.3) 0px 7px 29px 0px;
+    background: linear-gradient(90deg, rgb(227, 238, 255) 0%, rgb(255, 255, 255) 50%, rgb(227, 238, 255) 100%);
+
+    &:hover {
+      transform: scale(1.04);
+      transition: transform 0.2s ease-in-out;
+      -webkit-transform: scale(1.04);
+      -moz-transform: scale(1.04);
+      -o-transform: scale(1.04);
+      -ms-transform: scale(1.04);
+    }
+
+    &:not(:hover) {
+      transform: scale(1);
+      transition: transform 0.6s ease-in-out;
+    }
+
+  }
+
+  .cardItemNew {
+    box-shadow: rgba(100, 100, 109, 0.3) 0px 7px 29px 0px;
+    background: linear-gradient(90deg, rgb(234, 216, 255) 0%, rgb(255, 255, 255) 50%, rgb(236, 219, 255) 100%);
+
+
+
+    &:hover {
+      transform: scale(1.04);
+      transition: transform 0.4s ease-in-out;
+      -webkit-transform: scale(1.04);
+      -moz-transform: scale(1.04);
+      -o-transform: scale(1.04);
+      -ms-transform: scale(1.04);
+    }
+
+    &:not(:hover) {
+      transform: scale(1);
+      transition: transform 0.6s ease-in-out;
+    }
+
+  }
+
+  .itemCard {
+
+
+    .iconOriginCard {
+      color: #0f2f7f;
+    }
+
+    .textOriginCard {
+      color: #0f2f7f;
+      font-size: 14px;
+
+
+    }
+
+    .infoOriginCard {
+      color: #6d7272;
+      font-size: 14px;
+    }
+  }
+
+}
+
+.nameDocumentCard {
+  color: #0f2f7f;
+  font-size: 20px;
+  font-weight: 700;
+
+  &:hover {
+    opacity: 0.8;
+    color: #0f2f7f;
+  }
+}
+
+.mainNavRightOption {
+  display: flex;
+  align-items: center;
+}
+
+.optionRight {
+  // flex: 1;
+  width: 100%;
+  margin-top: 10px;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.popoverMainNavWrap {
+  display: flex;
+  flex-direction: column;
+  padding-top: 8px;
+  height: 60px;
+  margin-top: -10px;
+  margin-left: 20px;
+
+  .textMyInfo {
+    border-bottom: 1px solid #c6c7c7;
+    padding-bottom: 10px !important;
+
+    .iconInfo {
+      margin-right: 10px;
+    }
+  }
+
+  .textLogout {
+    padding-top: 15px !important;
+
+    .iconLogout {
+      margin-right: 10px;
+    }
+  }
+
+  .textMyInfo,
+  .textLogout {
+    color: rgb(1, 63, 143);
+    padding: 8px 0;
+    font-size: 15px;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+
+  .textMyInfo:hover,
+  .textLogout:hover {
+    color: #707272;
+  }
+}
+
+.iconViewFilter {
+  color: #0f2f7f;
+  font-weight: 500;
+
+}
+
+.textViewFilter {
+  color: #0f2f7f;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.headingFilter {
+  height: 39px;
+  margin-right: 10px;
+}
+
+.headingSelectSort {
+  height: 39px;
+  margin-right: 10px;
+
+}
+
+.headingSelectSort {
+  .placeholderSort {
+    color: #0f2f7f;
+    font-weight: 500;
+
+  }
+
+}
+
+.btnApprove {
+  margin-top: 10px;
+}
+
+// Màn hình máy tính
+@media (min-width: 1440px) {
+  .optionRight {
+    display: none;
+  }
+}
+
+//Màn hình tablet
+@media (max-width: 768px) {
+  .rowContainer {
+    margin-left: 10%;
+    margin-right: -40px;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 1440px) {
+  .rowContainer {
+    margin-left: 10%;
+    margin-right: -40px;
+
+  }
+}
+
+//Màn hình điện thoại
+@media (min-width: 375px) and(max-width: 576px) {
+  .rowContainer {
+    margin-left: 3%;
+
+    .optionRight {
+      position: fixed;
+    }
+
+    .titleHome {
+      display: none;
+    }
+
+    .btnBigCreate {
+      display: none;
+    }
+
+    .listCategory {
+      margin-top: 45px;
+    }
+  }
+
+}

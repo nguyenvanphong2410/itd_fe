@@ -1,0 +1,38 @@
+.iconRecentDocuments {
+    color: #d6ca1f;
+    font-size: 20px;
+    font-weight: 700;
+    margin-right: 4px;
+
+}
+
+.tabItemTextOrigin {
+    font-size: 15px;
+    margin-left: 24px;
+    font-weight: 500;
+}
+
+.tabItemText {
+    margin-left: 4px;
+    color: grey;
+
+    font-size: 15px;
+    font-style: italic;
+}
+
+.nameRecentDocuments {
+    color: #0f2f7f;
+    font-size: 20px;
+    font-weight: 700;
+     
+    &:hover{
+        cursor: pointer;
+        opacity: 0.8;
+    }
+}
+
+.timeRecentDocuments {
+    margin-left: 24px;
+    color: grey;
+    font-size: 14px;
+}
